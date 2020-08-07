@@ -1,0 +1,23 @@
+OK so I have 2 project ideas you can try.
+
+So state is an important element of applications, OOP is widely used to simulate state. Here's a project that could give you some 
+practice.
+Objective: simulate a padlock and key
+1. Create a pad-lock by simulating its state and interactions. Interactions like (insert key, remove key, twist key, untwist key, remove 
+key, open padlock, close padlock). Create a method for defining the key that represents success.
+
+2. Create a Key type. Override the equals method, so you can compare keys us ==.
+
+3. in your main, you can create questions asking the user
+
+
+You can create a class representing a playing card. Another class for a deck. Then you can create multiple game classes to simulate games between users.
+
+Deck:
+Decks should be able to have varying amounts of cards because it can represent a persons hand or a pile for people to pull from.
+Should have functionality such as, (shuffle, pull top, pull by position, inspect, inspect all, put, generate standard deck method).
+
+Card:
+Suit / Number
+
+After creating these, can later work on multiple game ideas using them. I can give you some and break them down if you want.
