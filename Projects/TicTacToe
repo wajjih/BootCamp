@@ -4,3 +4,7 @@ I'm guessing use arrays and such to create it
 2) use the information sent into the arrays to link it to variables somehow
 with those variables you create if else statements
 
+3)make the board to be able to print every turn
+
+4)1st version: user vs computer
+  2nd version: user vs user

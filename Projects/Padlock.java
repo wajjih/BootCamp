@@ -1,4 +1,4 @@
-package Project1;
+package Projects;
 
 
 public class Padlock{
