@@ -1,10 +1,14 @@
 package Projects;
 
 import java.util.Scanner;
-import java.util.function.Function;
+//import java.util.function.Function;
 
-public class TicTacToe {
-    
+public class TicTacToe {   
+
+    public static int win;  
+public static int currentPlayer = 1;
+public static String playerOneValue;
+public static String playerTwoValue;    
 public static Scanner Mod = new Scanner(System.in); 
 public static Scanner User = new Scanner(System.in);
 public static String userMove;
@@ -21,7 +25,7 @@ public static String[][] board = {{" ","|"," ", "|", " "},
                                 
 public static void introduction(){
     System.out.println("Welcome to TicTacToe!"); //Introduction
-    System.out.println("Choose Your Value");
+    System.out.println("Player 1, Choose Your Value");
     System.out.println("X or O?");
     userMove = User.nextLine();
 
@@ -36,12 +40,33 @@ public static void moderator(){
         modMove = Mod.nextInt();
 } 
 
-public static void move(){
-
+public static void swicthPlayer(){
+if(currentPlayer == 1){
+currentPlayer = 2;
+userMove = "O";
+System.out.println("Player 2 Turn!");
+}else if(currentPlayer == 2){
+currentPlayer = 1;
+userMove = "X";
+System.out.println("Player 1 Turn!");
+}
 }
 
+public static void valueOfPlayer(){
+    if(userMove == "X"){
+    playerOneValue = "X";
+    }else if(userMove == "O"){
+    playerTwoValue = "O";
+    }
+}
     
-
+public static void checkWinner(){
+   if (board[0][0].compareTo(playerOneValue) == 0 && board[0][2].compareTo(playerOneValue) == 0 && board[0][4].compareTo(playerOneValue) == 0 ){
+   System.out.println("Congratulations!");
+   System.out.println("Player 1 Wins!");
+   win = 1; 
+   }
+}
 
 
     
@@ -58,23 +83,20 @@ public static void move(){
        
         
         introduction();
+        for(int i = 0; i <= 9; i++){
         moderator();
         printValue();
-        moderator();
-        printValue();
+        swicthPlayer();
+        checkWinner();
+        if(win == 1){
+            i = 8;
+        }
 
+        
+        }
+        
         
      
-                  
-                         
-        
-                            
-     
-                                                           
-        
-
-
-        
     }
     public static void printGameBoard (String[][] board) {
         for (String[] row : board) {
@@ -85,44 +107,94 @@ public static void move(){
             System.out.println();
         }
     }
-
-    //The values here can't resolve to the variables above, what should I do??????
     
     static void printValue(){
         if(modMove == 1){
             board[0][0]= userMove;
-           printGameBoard(board); //Prints the board with the value the User assigns
+            
+            if(currentPlayer == 1){
+               playerOneValue = userMove; 
+            }else if(currentPlayer == 2){
+               playerTwoValue = userMove;
+            }
+            printGameBoard(board); 
                                        
            }else if(modMove == 2){
            board[0][2]= userMove;
+           
+           if(currentPlayer == 1){
+            playerOneValue = userMove; 
+         }else if(currentPlayer == 2){
+            playerTwoValue = userMove;
+         }
             printGameBoard(board);
                                        
            }else if(modMove == 3){
            board[0][4]= userMove;
+           
+           if(currentPlayer == 1){
+            playerOneValue = userMove; 
+         }else if(currentPlayer == 2){
+            playerTwoValue = userMove;
+         }
            printGameBoard(board);
                                        
            }else if(modMove == 4){
            board[2][0]= userMove;
+           
+           if(currentPlayer == 1){
+            playerOneValue = userMove; 
+         }else if(currentPlayer == 2){
+            playerTwoValue = userMove;
+         }
            printGameBoard(board);
                                        
            }else if(modMove == 5){
            board[2][2]= userMove;
+           if(currentPlayer == 1){
+            playerOneValue = userMove; 
+         }else if(currentPlayer == 2){
+            playerTwoValue = userMove;
+         }
            printGameBoard(board);
                                        
            }else if(modMove == 6){
            board[2][4]= userMove;
+
+           if(currentPlayer == 1){
+            playerOneValue = userMove; 
+         }else if(currentPlayer == 2){
+            playerTwoValue = userMove;
+         }
            printGameBoard(board);
                                        
            }else if(modMove == 7){
            board[4][0]= userMove;
+
+           if(currentPlayer == 1){
+            playerOneValue = userMove; 
+         }else if(currentPlayer == 2){
+            playerTwoValue = userMove;
+         }
            printGameBoard(board);
                                        
            }else if(modMove == 8){
            board[4][2]= userMove;
+
+           if(currentPlayer == 1){
+            playerOneValue = userMove; 
+         }else if(currentPlayer == 2){
+            playerTwoValue = userMove;
+         }
            printGameBoard(board);
                                        
            }else if(modMove == 9){
            board[4][4]= userMove;
+           if(currentPlayer == 1){
+            playerOneValue = userMove; 
+         }else if(currentPlayer == 2){
+            playerTwoValue = userMove;
+         }
            printGameBoard(board);
            }                 
     }
