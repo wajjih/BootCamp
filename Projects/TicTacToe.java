@@ -88,67 +88,67 @@ public static void valueOfPlayer(){
 public static void checkWinner(){
    if (board[0][0].compareTo(playerOneValue) == 0 && board[0][2].compareTo(playerOneValue) == 0 && board[0][4].compareTo(playerOneValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 1 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1; 
    }else if(board[2][0].compareTo(playerOneValue) == 0 && board[2][2].compareTo(playerOneValue) == 0 && board[2][4].compareTo(playerOneValue) == 0 ){
       System.out.println("Congratulations!");
-      System.out.println("Player 1 Wins!"  );
+      System.out.println("Player "+ currentPlayer + " Wins!"  );
       win = 1;
 }else if(board[4][0].compareTo(playerOneValue) == 0 && board[4][2].compareTo(playerOneValue) == 0 && board[4][4].compareTo(playerOneValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 1 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1;
 }else if(board[0][0].compareTo(playerOneValue) == 0 && board[2][0].compareTo(playerOneValue) == 0 && board[4][0].compareTo(playerOneValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 1 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1;
 }else if(board[0][2].compareTo(playerOneValue) == 0 && board[2][2].compareTo(playerOneValue) == 0 && board[4][2].compareTo(playerOneValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 1 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1;
 }else if(board[0][4].compareTo(playerOneValue) == 0 && board[2][4].compareTo(playerOneValue) == 0 && board[4][4].compareTo(playerOneValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 1 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1;
 }else if(board[4][0].compareTo(playerOneValue) == 0 && board[2][2].compareTo(playerOneValue) == 0 && board[0][4].compareTo(playerOneValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 1 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1;
 }else if(board[0][0].compareTo(playerOneValue) == 0 && board[2][2].compareTo(playerOneValue) == 0 && board[4][4].compareTo(playerOneValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 1 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!");
    win = 1;
 }else if(board[0][0].compareTo(playerTwoValue) == 0 && board[0][2].compareTo(playerTwoValue) == 0 && board[0][4].compareTo(playerTwoValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 2 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1; 
    }else if(board[2][0].compareTo(playerTwoValue) == 0 && board[2][2].compareTo(playerTwoValue) == 0 && board[2][4].compareTo(playerTwoValue) == 0 ){
       System.out.println("Congratulations!");
-      System.out.println("Player 2 Wins!"  );
+      System.out.println("Player "+ currentPlayer + " Wins!"  );
       win = 1;
 }else if(board[4][0].compareTo(playerTwoValue) == 0 && board[4][2].compareTo(playerTwoValue) == 0 && board[4][4].compareTo(playerTwoValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 2 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1;
 }else if(board[0][0].compareTo(playerTwoValue) == 0 && board[2][0].compareTo(playerTwoValue) == 0 && board[4][0].compareTo(playerTwoValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 2 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1;
 }else if(board[0][2].compareTo(playerTwoValue) == 0 && board[2][2].compareTo(playerTwoValue) == 0 && board[4][2].compareTo(playerTwoValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 2 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1;
 }else if(board[0][4].compareTo(playerTwoValue) == 0 && board[2][4].compareTo(playerTwoValue) == 0 && board[4][4].compareTo(playerTwoValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 2 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1;
 }else if(board[4][0].compareTo(playerTwoValue) == 0 && board[2][2].compareTo(playerTwoValue) == 0 && board[0][4].compareTo(playerTwoValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 2 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1;
 }else if(board[0][0].compareTo(playerTwoValue) == 0 && board[2][2].compareTo(playerTwoValue) == 0 && board[4][4].compareTo(playerTwoValue) == 0 ){
    System.out.println("Congratulations!");
-   System.out.println("Player 2 Wins!"  );
+   System.out.println("Player "+ currentPlayer + " Wins!"  );
    win = 1;
 }else if(draw == 8){
    System.out.println("Draw");
