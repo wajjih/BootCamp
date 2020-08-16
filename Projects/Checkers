@@ -1,0 +1,12 @@
+So setup a project structure such that,
+
+1. there is a CheckersGame file and class within that (This is where you will start off your checkers game). For now 
+the only thing in there should be the public static void main function.
+
+2. there is a CheckersGamePiece class. This should only have 2 properties for now being type and color. 
+Make the properties (or variables) public. 
+Add 1 public method named getText to this class. It should return a string, "R" if the type is king and the color is red, "r" 
+for normal piece, "B" for black king, "b" for black normal).
+
+In the CheckersGame main function, create an instance of the CheckersGamePiece. Set the variables accordingly, then print the 
+result of the getText.
