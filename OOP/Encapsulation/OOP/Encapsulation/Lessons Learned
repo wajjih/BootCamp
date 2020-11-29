@@ -1,0 +1,40 @@
+When doing encapsulation, the variables are private at the top while the rest of the classes and constructors use those variables
+to set and get
+
+
+ex:
+
+
+public class Manager {
+    
+    private String name;
+    private double height;
+    private int age;
+    
+    public Manager(){
+        height = 6.0;
+
+    }
+    
+    public double getHeight(){
+        return height;
+    }
+    public void setHeight(double height) {
+        this.height = height; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
