@@ -8,8 +8,8 @@ public class Manager {
     private double height;
     private int age;
     
-    public Manager(){
-        height = 6.0;
+    Manager(double height){
+        setHeight(height);
 
     }
     
@@ -27,6 +27,18 @@ public class Manager {
 
     public void setName(String name){
         this.name = name;
+    }
+    public void manageHeight(){
+     System.out.println(getHeight());
+    }
+    
+
+    public static void main(String[] args) {
+        Manager hadia = new Manager(6.0);
+
+        hadia.manageHeight();
+        
+        
     }
 
 

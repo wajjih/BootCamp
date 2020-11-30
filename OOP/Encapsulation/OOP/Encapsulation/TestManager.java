@@ -5,7 +5,7 @@ package OOP.Encapsulation;
 public class TestManager {
     
     public static void main(String[] args) {
-        
+        /*
         Manager wajjih = new Manager();
 
         wajjih.setName("Wajjih");
@@ -15,5 +15,6 @@ public class TestManager {
 
         System.out.println("The managers name is " + wajjih.getName() );
         System.out.println(" The managers height is " + wajjih.getHeight() );
+        */
     }
 }
