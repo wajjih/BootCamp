@@ -8,11 +8,11 @@ public class hadia {
         int z = x + y;
         y = z-x;
         
-        
+        String name = "Hadia";
     
         
         
-        System.out.println(y);
+        System.out.println(name + " is " + x + " years old ");
 
 
         
